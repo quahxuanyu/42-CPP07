@@ -1,14 +1,12 @@
-CXX = command /usr/bin/g++
-
+CXX = c++
 CXX_FLAGS = -Wall -Wextra -Werror -std=c++98
 
-# Add Base.cpp to sources
 SRC = main.cpp
 OBJS_DIR = objs
 OBJS = $(addprefix $(OBJS_DIR)/, $(SRC:.cpp=.o))
 
 # Target executable
-TARGET = whatever
+TARGET = iter
 
 # Rules
 all: $(TARGET)
